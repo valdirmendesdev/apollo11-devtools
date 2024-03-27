@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML + CSS</title>
+  <style>
+    h1 {
+      color: white;
+      background-color: gray;
+      /* margin-left: 40px; */
+      font-size: 6em;
+      text-align: center;
+    }
+
+    p.exemplo {
+      color: blue;
+      font-size: 3em;
+      border: 2px solid rgb(129, 203, 255);
+    }
+  </style>
+  <script>
+    function displayDate() {
+      let now = new Date();
+      alert("Você é o bixão mesmo heim?! Só por isto, vou registrar!")
+      document.getElementById("log").innerHTML += `Clicou em no botão: ${now.toLocaleDateString()} ${now.toLocaleTimeString()}<br />`;
+    }
+  </script>
+</head>
+
+<body>
+  <h1>HTML + CSS</h1>
+  <p class="exemplo">Exemplo de parágrafo em HTML + CSS!</p>
+  <button onclick="displayDate()">Duvido você clicar aqui!</button>
+  <p id="log"></p>
+</body>
+
+</html>
